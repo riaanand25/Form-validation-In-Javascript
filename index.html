@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="form">
+            <h1>Form Validation</h1>
+            <form action="">
+                <input type="text" placeholder="Enter your Name" name="name" id="name">
+                <span id="error"></span>
+                <input type="text" placeholder="Enter your age" name="age" id="age"><br>
+                <span id="ageError"></span>
+                <input type="text" placeholder="Enter your phone" name="phone" id="phone"><br>
+                <span id="numberMessage"></span>
+                <input type="text" placeholder="Enter your email" name="email" id="email"><br>
+                <span id="emailValue"></span>
+                <div class="gender">
+                    <label><input type="radio" name="gender" value="male" id="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female" id="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other" id="other"> Other</label>
+                    <span id="gender"></span>
+                </div>
+                <select class="form-control" id="hometown" name="hometown">
+                    <option value="" disabled selected>Select Hometown</option>
+                    <option value="Jaipur">Jaipur</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="pune">pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                </select>
+                <span id="town"></span>
+            </form>
+            <button type="submit" id="btn">Submit</button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
